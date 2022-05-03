@@ -1,6 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+mongoose.connect('mongodb://localhost:27017/yelp-camp', {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+});
+
+
+
 const app = express();
 const port = 3000;
 const path = require('path');
