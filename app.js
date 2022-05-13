@@ -20,7 +20,7 @@ db.once('open', () => {
 const app = express();
 const port = 3000;
 
-app.engine('ejs', ejsMate);
+app.engine('ejs', engineMate);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
